@@ -1,0 +1,14 @@
+com\rafiansyahds\dynamicapi\service\interfaces\HttpService.class
+com\rafiansyahds\dynamicapi\controller\HttpController.class
+com\rafiansyahds\dynamicapi\models\User.class
+com\rafiansyahds\dynamicapi\service\SVCServiceImpl.class
+com\rafiansyahds\dynamicapi\service\UserServiceImpl.class
+com\rafiansyahds\dynamicapi\repository\UserRepo.class
+com\rafiansyahds\dynamicapi\models\SVCData.class
+com\rafiansyahds\dynamicapi\service\interfaces\UserService.class
+com\rafiansyahds\dynamicapi\DynamicApi.class
+com\rafiansyahds\dynamicapi\repository\SVCRepo.class
+com\rafiansyahds\dynamicapi\service\HttpServiceImpl.class
+com\rafiansyahds\dynamicapi\service\interfaces\SVCService.class
+com\rafiansyahds\dynamicapi\connector\DBConnector.class
+com\rafiansyahds\dynamicapi\models\SVCRest.class
