@@ -1,4 +1,4 @@
-# Java Dynamic API Switch Handler
+# Pure Java Dynamic API Switch Handler
 
 This project demonstrates the use of a dynamic API switch handler in a pure Java application without any frameworks. The application routes API requests to different logic methods based on the HTTP method and path, allowing for flexible and scalable API management.
 
@@ -44,11 +44,11 @@ The main use case of this project is to handle various API requests dynamically 
 - **Request Body** (JSON):
   ```json
   {
-    "id": "user_id",
-    "userId": "user123",
-    "nama": "User Name",
-    "isActive": "Y",
-    "passwd": "password"
+    "id": "Usr2",
+    "userId": "Rafi02",
+    "nama": "Rafi",
+    "isActive": "N",
+    "passwd": "30042002"
   }
   ```
 - **Response**: JSON object with update status.
@@ -61,11 +61,11 @@ The main use case of this project is to handle various API requests dynamically 
 - **Request Body** (JSON):
   ```json
   {
-    "id": "user_id",
-    "userId": "user123",
-    "nama": "User Name",
-    "isActive": "Y",
-    "passwd": "password"
+    "id": "Usr2",
+    "userId": "User02",
+    "nama": "Rafi",
+    "isActive": "N",
+    "passwd": "30042002"
   }
   ```
 - **Response**: JSON object with creation status.
@@ -80,11 +80,21 @@ The main use case of this project is to handle various API requests dynamically 
 - **Request Body** (JSON):
   ```json
   {
-    "id": "api_id",
-    "nama": "API Name",
+    "id": "TESTER",
+    "nama": "DYNAMIC API CREATE TEST",
     "httpMethod": "GET",
-    "httpURI": "/api/custom-path",
-    "isActive": "Y"
+    "httpURI": "/test",
+    "isActive": "N",
+    "data":{
+        "header":{
+            "content-type":"application/json", 
+            "test":"test123"
+        },
+        "body":{
+            "nim":"2930921321",
+            "name":"Budi Sidoarjo"
+        }
+    }
   }
   ```
 - **Response**: JSON object with creation status.
@@ -104,11 +114,21 @@ The main use case of this project is to handle various API requests dynamically 
 - **Request Body** (JSON):
   ```json
   {
-    "id": "api_id",
-    "nama": "API Name",
-    "httpMethod": "GET",
-    "httpURI": "/api/custom-path",
-    "isActive": "Y"
+    "id": "TESTER",
+    "nama": "DYNAMIC API UPDATE TEST",
+    "httpMethod": "POST",
+    "httpURI": "/test",
+    "isActive": "N",
+    "data":{
+        "header":{
+            "content-type":"application/json", 
+            "test":"test123"
+        },
+        "body":{
+            "nim":"2930921321",
+            "name":"Budi Sidoarjo"
+        }
+    }
   }
   ```
 - **Response**: JSON object with update status.
@@ -125,8 +145,8 @@ The main use case of this project is to handle various API requests dynamically 
 ### Default Dynamic API Handler
 
 - **Method**: Any
-- **Path**: Any
-- **Description**: Handles dynamic API requests that do not match any of the predefined endpoints, checks the database for dynamic path then return the json match with the path.
+- **Path**: `/api/dynamic/*`
+- **Description**: Handles dynamic API requests that do not match any of the predefined endpoints, checks the path from database then return the json according to the path.
 - **Response**: JSON object with the result of the dynamic API request.
 
 ## Getting Started
@@ -138,3 +158,7 @@ The main use case of this project is to handle various API requests dynamically 
 ## Contributing
 
 Contributions are welcome! Please submit a pull request or open an issue to discuss any changes.
+
+## License
+
+This project is licensed under the MIT License.
