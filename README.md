@@ -138,7 +138,3 @@ The main use case of this project is to handle various API requests dynamically 
 ## Contributing
 
 Contributions are welcome! Please submit a pull request or open an issue to discuss any changes.
-
-## License
-
-This project is licensed under the MIT License.
