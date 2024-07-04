@@ -1,4 +1,4 @@
-# Pure Java Dynamic API Switch Handler
+# Java Dynamic API Switch Handler
 
 This project demonstrates the use of a dynamic API switch handler in a pure Java application without any frameworks. The application routes API requests to different logic methods based on the HTTP method and path, allowing for flexible and scalable API management.
 
@@ -133,25 +133,7 @@ The main use case of this project is to handle various API requests dynamically 
 
 ### Prerequisites
 
-- Java 11 or higher
-
-### Installation
-
-1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/pure-java-dynamic-api-switch-handler.git
-   cd pure-java-dynamic-api-switch-handler
-   ```
-
-2. Compile the project:
-   ```
-   javac -cp "path/to/gson.jar:path/to/servlet-api.jar" -d bin src/*.java
-   ```
-
-3. Run the application:
-   ```
-   java -cp "bin:path/to/gson.jar:path/to/servlet-api.jar" YourMainClass
-   ```
+- Java 8 or higher
 
 ## Contributing
 
