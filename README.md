@@ -126,7 +126,7 @@ The main use case of this project is to handle various API requests dynamically 
 
 - **Method**: Any
 - **Path**: Any
-- **Description**: Handles dynamic API requests that do not match any of the predefined endpoints.
+- **Description**: Handles dynamic API requests that do not match any of the predefined endpoints, checks the database for dynamic path then return the json match with the path.
 - **Response**: JSON object with the result of the dynamic API request.
 
 ## Getting Started
